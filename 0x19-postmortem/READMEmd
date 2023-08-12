@@ -1,6 +1,5 @@
 Ethio Telecom Server Error
-
-Server Error
+/tmp/68747470733a2f2f696d616765732e706578656c732e636f6d2f70686f746f732f363436363134312f706578656c732d70686f746f2d363436363134312e6a7065673f6175746f3d636f6d70726573732663733d74696e797372676226773d363030.jpg
 Issue Summary
 
 From 12:30 AM to 4:30 AM, Ethio telecome server was experienced an outage due to a prescheduled reboot that ended in failure. The points of failure are coming from the rebooting of the load balancer or cache server. The Security Team issued a maintenance update and a reboot notification to a major server on October 23, 2022 for a window of 4 hours (12:30 AM to 4:30 AM). Security Team is patching a security vulnerability in the Program. Customers reaching the site after the reboot scheduled time of 2:30 AM to 8:30 AM could not reach the site, affecting 100% of them. The root cause of the outage was due to the data on the the server not auto-mounting at boot time. The SRE mistakenly acknowledged the incident as something normal during a server reboot and closed all subsequent alerts. Timeline (all times in East Africa Time(EAT))
