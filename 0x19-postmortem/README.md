@@ -1,1 +1,17 @@
- 
+ Issue Summary
+Duration of the Outage: The outage lasted for 2 hours, from 10:00 AM to 12:00 PM GMT on October 15, 2023.
+Impact: The main website was down, causing a disruption in service for approximately 45% of our users.
+Root Cause: A misconfiguration in the load balancer led to an overload of the primary server.
+Timeline
+10:05 AM: The issue was detected by our automated monitoring system which alerted the on-call engineer.
+10:15 AM: Initial investigation pointed towards a network issue. Network logs were checked but no issues were found.
+10:45 AM: The issue was escalated to the site reliability team.
+11:00 AM: Further investigation revealed that the load balancer was not distributing network traffic evenly.
+11:30 AM: A fix was implemented and the service was partially restored.
+12:00 PM: Full service was restored.
+Root Cause and Resolution
+The root cause of the issue was a misconfiguration in the load balancer settings. This caused all traffic to be directed to one server, leading to an overload and subsequent service disruption.
+The issue was resolved by correcting the configuration settings and redistributing the network traffic evenly across all servers.
+Corrective and Preventative Measures
+To prevent this from happening in the future, we will improve our change management procedures to ensure all configuration changes are reviewed and tested before implementation.
+We will also enhance our monitoring system to detect anomalies in network traffic distribution.
